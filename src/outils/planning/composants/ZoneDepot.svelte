@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Icone from './Icone.svelte';
+	import Icone from '$lib/components/Icone.svelte';
 
 	let { onFichiers }: { onFichiers: (fichiers: File[]) => void } = $props();
 	let survol = $state(false);

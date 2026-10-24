@@ -1,9 +1,9 @@
 <script lang="ts">
-	import { ROUTE_RECEPTION } from '$lib/constantes';
-	import { planning } from '$lib/planning';
+	import { ROUTE_RECEPTION } from '../constantes.ts';
+	import { planning } from '../logique/index.ts';
 	import { naviguer } from '$lib/routage';
 	import ApercuEvenements from './ApercuEvenements.svelte';
-	import Icone from './Icone.svelte';
+	import Icone from '$lib/components/Icone.svelte';
 	import ReceptionPlanning from './ReceptionPlanning.svelte';
 	import ScannerQr from './ScannerQr.svelte';
 	import SortieAgenda from './SortieAgenda.svelte';

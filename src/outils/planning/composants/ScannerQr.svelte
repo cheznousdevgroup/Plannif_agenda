@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { extraireCharge } from '$lib/planning';
+	import { extraireCharge } from '../logique/index.ts';
 	import { demarrerScan } from '$lib/qr';
-	import Icone from './Icone.svelte';
+	import Icone from '$lib/components/Icone.svelte';
 
 	let { onCharge, onFermer }: { onCharge: (charge: string) => void; onFermer: () => void } = $props();
 	let video: HTMLVideoElement;

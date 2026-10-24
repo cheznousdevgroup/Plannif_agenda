@@ -1,5 +1,5 @@
-import type { Evenement } from '$lib/types';
-import { DOMAINE_UID_ICS, MS_JOUR, PRODID_ICS } from '$lib/constantes';
+import type { Evenement } from '../types.ts';
+import { DOMAINE_UID_ICS, MS_JOUR, PRODID_ICS } from '../constantes.ts';
 import { empreinte } from './evenements.ts';
 
 const horodatage = (ms: number) => new Date(ms).toISOString().replace(/[-:]|\.\d{3}/g, '');

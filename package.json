@@ -9,8 +9,10 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "test": "node --experimental-strip-types --test \"src/outils/**/*.test.ts\"",
+    "nouvel-outil": "node scripts/nouvel-outil.mjs",
     "organisation": "node scripts/verifier-organisation.mjs",
-    "check": "node scripts/verifier-organisation.mjs && svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json"
+    "check": "node scripts/verifier-organisation.mjs && npm test && svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^7.3.0",

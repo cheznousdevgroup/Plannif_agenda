@@ -1,5 +1,5 @@
-import type { Evenement } from '$lib/types';
-import { MAX_CARACTERES_LIEN, MS_JOUR, MS_MINUTE, MAX_EVENEMENTS_LIEN, MAX_OCTETS_DECOMPRESSES, MAX_TEXTE_LIEN, ROUTE_RECEPTION, TAILLE_MAX_LIEN_QR, VERSION_FORMAT_LIEN } from '$lib/constantes';
+import type { Evenement } from '../types.ts';
+import { MAX_CARACTERES_LIEN, MS_JOUR, MS_MINUTE, MAX_EVENEMENTS_LIEN, MAX_OCTETS_DECOMPRESSES, MAX_TEXTE_LIEN, ROUTE_RECEPTION, TAILLE_MAX_LIEN_QR, VERSION_FORMAT_LIEN } from '../constantes.ts';
 
 // Format compact : les textes répétés (titre, lieu, description…) sont stockés une seule fois dans un dictionnaire `s`,
 // chaque rendez-vous n'étant plus que des nombres. Puis compression : c'est ce qui fait tenir un semestre dans un QR.

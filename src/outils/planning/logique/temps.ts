@@ -1,4 +1,4 @@
-import { FUSEAU_PLANNING } from '$lib/constantes';
+import { FUSEAU_PLANNING } from '../constantes.ts';
 
 const formateurs = new Map<string, Intl.DateTimeFormat>();
 

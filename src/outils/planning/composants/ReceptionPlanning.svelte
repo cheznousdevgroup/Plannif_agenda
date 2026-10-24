@@ -1,9 +1,9 @@
 <script lang="ts">
-	import type { Evenement } from '$lib/types';
-	import { NOM_FICHIER_ICS } from '$lib/constantes';
-	import { construireIcs, decoder, envoyerVersAgenda } from '$lib/planning';
+	import type { Evenement } from '../types.ts';
+	import { NOM_FICHIER_ICS } from '../constantes.ts';
+	import { construireIcs, decoder, envoyerVersAgenda } from '../logique/index.ts';
 	import ApercuEvenements from './ApercuEvenements.svelte';
-	import Icone from './Icone.svelte';
+	import Icone from '$lib/components/Icone.svelte';
 
 	let { charge }: { charge: string } = $props();
 	let evenements = $state<Evenement[]>([]);

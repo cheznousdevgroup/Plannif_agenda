@@ -1,9 +1,9 @@
 <script lang="ts">
-	import type { Evenement } from '$lib/types';
-	import { NOM_FICHIER_ICS } from '$lib/constantes';
-	import { construireIcs, envoyerVersAgenda, liensPourQr } from '$lib/planning';
+	import type { Evenement } from '../types.ts';
+	import { NOM_FICHIER_ICS } from '../constantes.ts';
+	import { construireIcs, envoyerVersAgenda, liensPourQr } from '../logique/index.ts';
 	import { dessinerQr } from '$lib/qr';
-	import Icone from './Icone.svelte';
+	import Icone from '$lib/components/Icone.svelte';
 
 	let { evenements }: { evenements: Evenement[] } = $props();
 	let images = $state<string[]>([]);

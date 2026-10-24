@@ -1,6 +1,6 @@
 <script lang="ts">
-	import type { Evenement } from '$lib/types';
-	import { jourCourt, mois, plage } from '$lib/planning';
+	import type { Evenement } from '../types.ts';
+	import { jourCourt, mois, plage } from '../logique/index.ts';
 
 	let { evenements }: { evenements: Evenement[] } = $props();
 

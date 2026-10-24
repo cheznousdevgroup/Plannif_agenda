@@ -1,4 +1,4 @@
-import type { FichierPlanning } from '$lib/types';
+import type { FichierPlanning } from '../types.ts';
 import { decoderTexte, lireCsv } from './csv.ts';
 import { fusionner } from './evenements.ts';
 

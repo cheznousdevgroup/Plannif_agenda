@@ -1,5 +1,5 @@
-import type { Evenement } from '$lib/types';
-import { FUSEAU_PLANNING, LANGUE_AFFICHAGE } from '$lib/constantes';
+import type { Evenement } from '../types.ts';
+import { FUSEAU_PLANNING, LANGUE_AFFICHAGE } from '../constantes.ts';
 
 // Les rendez-vous « journée entière » sont stockés à minuit UTC : on les affiche en UTC pour ne pas les décaler d'un jour.
 const fuseau = (e: Evenement) => (e.journeeEntiere ? 'UTC' : FUSEAU_PLANNING);

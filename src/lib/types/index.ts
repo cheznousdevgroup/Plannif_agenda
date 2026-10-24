@@ -1,5 +1,2 @@
-// ============================================================
-// TYPES : l'unique porte d'entrée (« $lib/types »). Un fichier par thème.
-// ============================================================
-export * from './planning.ts';
+// Types partagés par le socle et tous les logiciels. Les types propres à un logiciel vivent dans son types.ts.
 export * from './outils.ts';

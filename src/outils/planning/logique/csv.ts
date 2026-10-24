@@ -1,4 +1,4 @@
-import type { Evenement, LectureCsv } from '$lib/types';
+import type { Evenement, LectureCsv } from '../types.ts';
 import { murVersUtc } from './temps.ts';
 
 /** Les exports Outlook sont en ANSI (Windows-1252) : on tente l'UTF-8 strict, sinon on retombe sur l'ANSI. */

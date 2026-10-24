@@ -1,4 +1,4 @@
-import type { Evenement } from '$lib/types';
+import type { Evenement } from '../types.ts';
 
 /** Empreinte stable d'un rendez-vous : sert à retirer les doublons et d'identifiant dans le .ics (réimporter met à jour, ne duplique pas). */
 export function empreinte(e: Evenement): string {
